@@ -1,0 +1,90 @@
+body {
+    /* Background for the animated 'code' feel */
+    background: #1a1a2e;
+    color: #e94560; /* Vibrant primary color */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.countdown-container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent card */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#countdown-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fc466b; /* Secondary vibrant color */
+    text-shadow: 0 0 10px #fc466b;
+}
+
+#countdown-timer {
+    display: flex;
+    gap: 20px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: #0f3460; /* Darker box background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    min-width: 80px;
+    position: relative;
+    /* Animation for 'amazing' effect */
+    transition: transform 0.2s ease-in-out;
+}
+
+.time-box:hover {
+    transform: translateY(-5px);
+}
+
+.number {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #92e6a7; /* Bright "LED" green for numbers */
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #e0d0d0;
+}
+
+/* Style for the 'Happy Birthday' message */
+#birthday-message {
+    font-size: 4em;
+    color: #ffe066;
+    margin-top: 30px;
+    text-shadow: 0 0 20px #ffe066;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Simple pulsating animation */
+@keyframes pulse {
+    from {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
